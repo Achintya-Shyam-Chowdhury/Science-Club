@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information - Research Club</title>
+    <link rel="stylesheet" href="contact_infos.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home Page">Home</a></li>
+            <li><a href="about.html" title="About us">About Us</a></li>
+            <li><a href="research_papers.html" title="Research Papers">Research Papers</a></li>
+            <li><a href="contact_infos.html" title="Contact Infos">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Information Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>For inquiries or questions, please feel free to contact us using the information below:</p>
+            <ul>
+                <li>Email: achintyashyamchowdhury01234@gmail.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Research Club St., City, Country</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+        <div class="container">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Science & Technology Research Club. All rights reserved by Rajnagar Technical School & College.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript code for form submission -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Retrieve form data
+            var formData = new FormData(this);
+
+            // Format form data
+            var formattedData = "Name: " + formData.get("name") + "<br>" +
+                "Email: " + formData.get("email") + "<br>" +
+                "Message: " + formData.get("message") + "<br><hr>";
+
+            // Create a new div element
+            var div = document.createElement("div");
+            div.innerHTML = formattedData;
+
+            // Append the new div element to the storedData div
+            document.getElementById("storedData").appendChild(div);
+
+            // Alert the user
+            alert("Form submitted successfully!");
+
+            // Reset the form
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+
+</body>
+
+</html>
