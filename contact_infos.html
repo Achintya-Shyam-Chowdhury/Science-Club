@@ -27,8 +27,8 @@
             <p>For inquiries or questions, please feel free to contact us using the information below:</p>
             <ul>
                 <li>Email: achintyashyamchowdhury01234@gmail.com</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Address: 123 Research Club St., City, Country</li>
+                <li>Phone: 01701139573</li>
+                <li>Address: Xyz, Zastian, Zautry </li>
             </ul>
         </div>
     </section>
@@ -55,32 +55,11 @@
             <p>&copy; 2024 Science & Technology Research Club. All rights reserved by Rajnagar Technical School & College.</p>
         </div>
     </footer>
-
-    <!-- JavaScript code for form submission -->
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-
-            // Retrieve form data
-            var formData = new FormData(this);
-
-            // Format form data
-            var formattedData = "Name: " + formData.get("name") + "<br>" +
-                "Email: " + formData.get("email") + "<br>" +
-                "Message: " + formData.get("message") + "<br><hr>";
-
-            // Create a new div element
-            var div = document.createElement("div");
-            div.innerHTML = formattedData;
-
-            // Append the new div element to the storedData div
-            document.getElementById("storedData").appendChild(div);
-
-            // Alert the user
-            alert("Form submitted successfully!");
-
-            // Reset the form
-            document.getElementById("contactForm").reset();
+        // showing error when clicking button submit
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Not Able To Send");
         });
     </script>
 
