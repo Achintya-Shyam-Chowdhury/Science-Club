@@ -1,0 +1,84 @@
+/* Styles for desktop devices */
+@media only screen and (min-width: 601px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a {
+        color: #000;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+}
+/* Styles for tablets and mobile devices */
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav a:last-child {
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+}
