@@ -15,7 +15,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
 /* Navigation bar styles */
 nav {
     background-color: #333;
