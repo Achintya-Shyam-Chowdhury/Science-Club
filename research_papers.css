@@ -31,7 +31,39 @@ nav {
     color: #fff;
     padding: 10px 20px;
 }
+#tag-filter {
+    margin: 20px 0;
+}
 
+#tag-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-container {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked+label {
+    background-color: #333;
+    color: #fff;
+}
 nav ul {
     list-style-type: none;
 }

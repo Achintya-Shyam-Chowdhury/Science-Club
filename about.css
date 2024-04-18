@@ -35,7 +35,29 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+/* Add this CSS to your existing CSS file */
 
+/* Social Media Links */
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #333;
+    /* Adjust color as needed */
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    color: #007bff;
+    /* Adjust hover color as needed */
+}
 /* About section styles */
 #about {
     padding: 50px 20px;
